@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>K–10 Continuum Update</title>
+    <meta
+      name="description"
+      content="Update on the K–10 FSL Continuum with a focus on K–4 and FLORA." />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #0f172a;
+        --muted: #475569;
+        --card: #f8fafc;
+        --border: #e2e8f0;
+        --link: #2563eb;
+        --accent: #0ea5e9;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b1220;
+          --fg: #e5e7eb;
+          --muted: #94a3b8;
+          --card: #0f172a;
+          --border: #1f2937;
+          --link: #60a5fa;
+          --accent: #22d3ee;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial,
+          sans-serif;
+      }
+      .wrap {
+        max-width: 980px;
+        margin-inline: auto;
+        padding: 24px;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background: color-mix(in oklab, var(--bg) 92%, transparent);
+        backdrop-filter: saturate(140%) blur(6px);
+        border-bottom: 1px solid var(--border);
+        z-index: 10;
+      }
+      header .wrap {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h1 {
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        margin: 0.6rem 0;
+      }
+      nav {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      nav a {
+        padding: 8px 12px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        text-decoration: none;
+        color: var(--fg);
+      }
+      nav a:hover {
+        border-color: var(--accent);
+      }
+      main .wrap {
+        padding-top: 28px;
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 20px;
+        margin: 18px 0;
+      }
+      h2 {
+        margin: 0 0 10px 0;
+        font-size: 1.25rem;
+      }
+      h3 {
+        margin: 16px 0 8px 0;
+        font-size: 1.05rem;
+        color: var(--muted);
+      }
+      p {
+        margin: 8px 0;
+      }
+      ul {
+        margin: 10px 0 4px 24px;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: var(--link);
+        border: 1px solid var(--border);
+        padding: 0.18rem 0.55rem;
+        border-radius: 999px;
+      }
+      .grid {
+        display: grid;
+        gap: 14px;
+      }
+      @media (min-width: 720px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      footer {
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>K–10 Continuum Update</h1>
+        <nav aria-label="Sections">
+          <a href="#focus">Current Focus</a>
+          <a href="#consultations">Consultation Themes</a>
+          <a href="#flora">What is FLORA?</a>
+          <a href="#advantages">FLORA Advantages</a>
+          <a href="#work">Current Work</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <p class="badge" aria-hidden="true">Updated</p>
+        <section id="focus" aria-labelledby="focus-h">
+          <h2 id="focus-h">Current Focus</h2>
+          <p>
+            We are currently focused on the <strong>K–4 continuum</strong> to
+            ensure clarity, stability, and realistic expectations in early FSL
+            programming.
+          </p>
+        </section>
+
+        <section id="consultations" aria-labelledby="consultations-h">
+          <h2 id="consultations-h">
+            Key Themes from Preliminary Consultations
+          </h2>
+          <ul>
+            <li>
+              <strong>Concrete &amp; measurable outcomes</strong> in the K–4
+              continuum
+            </li>
+            <li>
+              <strong>Stability</strong> and consistency across classrooms
+            </li>
+            <li>
+              <strong>Continued and expanded use</strong> of
+              <em>French Language Opportunities in Rural Areas (FLORA)</em>
+            </li>
+            <li>
+              <strong>Realistic expectations</strong> aligned with provincial
+              assessment data
+            </li>
+            <li>
+              <strong>Reduced planning</strong> via rich, exemplary-practice
+              resources
+            </li>
+          </ul>
+        </section>
+
+        <section id="flora" aria-labelledby="flora-h">
+          <h2 id="flora-h">What is FLORA?</h2>
+          <p>
+            <strong
+              >French Language Opportunities in Rural Areas (FLORA)</strong
+            >
+            was developed to provide equitable access to French Second Language
+            (FSL) opportunities in rural settings.
+          </p>
+          <ul>
+            <li>
+              Recognizes educators’ varied French proficiency and pedagogical
+              training
+            </li>
+            <li>
+              Serves as an
+              <strong>optional, flexible resource</strong> adaptable to diverse
+              classrooms
+            </li>
+          </ul>
+        </section>
+
+        <section id="advantages" aria-labelledby="advantages-h">
+          <h2 id="advantages-h">
+            Advantages of FLORA as a Prescribed Resource
+          </h2>
+          <div class="grid">
+            <ul>
+              <li>Vetted by FLS experts</li>
+              <li>Already implemented within the system</li>
+              <li>Embeds <strong>exemplary FSL teaching</strong> practices</li>
+            </ul>
+            <ul>
+              <li>
+                Provides <strong>differentiated</strong> and engaging materials
+                (songs, puppets, conversations, progressive language)
+              </li>
+              <li>
+                Written in <strong>Canadian French</strong> for NB learners
+              </li>
+              <li><strong>Accessible</strong> and easy to integrate</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="work" aria-labelledby="work-h">
+          <h2 id="work-h">Current Work in Progress</h2>
+          <ul>
+            <li>
+              <strong>Timeline Development:</strong> Establishing key milestones
+              for K–10 rollout
+            </li>
+            <li>
+              <strong>Outcome Enhancement:</strong> Strengthening K–4 outcomes
+              for clarity, accountability, and assessment
+            </li>
+            <li>
+              <strong>Cross-Curricular Integration:</strong> Identifying
+              connections to maximize French exposure across subjects
+            </li>
+            <li>
+              <strong>Rebranding:</strong> French Language Opportunities in
+              Rural Areas → <em>French Language Opportunities Reaching All</em>
+            </li>
+            <li>
+              <strong>Sustainability:</strong> Reducing dependence on technology
+              to improve long-term accessibility
+            </li>
+            <li>
+              <strong>Resource Inventory:</strong> Reviewing current materials
+              and gaps
+            </li>
+            <li>
+              <strong>Professional Learning:</strong> Needs assessment and
+              <em>online module</em> development for educators
+            </li>
+            <li>
+              <strong>Leadership Guidelines:</strong> Tools for school leaders
+              to support classroom teachers (e.g., FSL teacher recommended)
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>&copy; <span id="year"></span> K–10 Continuum • FLORA</p>
+      </div>
+    </footer>
+
+    <script>
+      // minimal enhancement: set year automatically
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
